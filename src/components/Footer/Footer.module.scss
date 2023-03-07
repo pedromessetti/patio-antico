@@ -4,22 +4,76 @@
 .footer {
   background-color: $green;
   
-  h3 {
-    margin-left: 10px;
+  &__top {
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr .5fr;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      margin: 20px;
+      color: $black;
+      transition: 300ms;
+
+      &:hover {
+        color: $grey;
+
+        .icon {
+          transition: 300ms;
+
+          &__ubereats {
+            color: $ubereats;
+          }
+
+          &__mail {
+            color: $red;
+          }
+
+          &__tel {
+            color: $tel;
+          }
+
+          &__location {
+            color: $red;
+          }
+
+          &__facebook {
+            color: $facebook;
+          }
+
+          &__instagram {
+            color: $instagram;
+          }
+
+          &__tripadvisor {
+            color: $tripadvisor;
+          }
+        }
+      }
+    }
+
   }
 
   p {
-    margin-left: 20px;
     display: flex;
     align-items: center;
     font-weight: 700;
-    color:$black;
+    margin: 20px;
+    color: $black;
   }
+
+  h3 {
+    font-size: 2em;
+    margin-left: 20px;
+  }
+
 
   svg {
-    margin: 0 5px;
+    scale: 150%;
+    color: $black;
+    margin: 0 10px;
   }
-
 
   &__bottom {
     background-color: $dark-green;
