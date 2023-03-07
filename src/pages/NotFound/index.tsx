@@ -3,7 +3,9 @@ import style from './NotFound.module.scss'
 import styleTema from 'styles/Tema.module.scss'
 
 //Importação da imagem de not found como um component
-import NotFoundImage from 'assets/not_found.png'
+import NotFoundImage from 'assets/sleep.webp'
+
+import { BsFillEmojiHeartEyesFill } from 'react-icons/bs'
 
 import { useNavigate } from 'react-router-dom'
 
@@ -29,8 +31,9 @@ export default function NotFound() {
           {'< Voltar'}
         </button>
       </div>
-      <img src={NotFoundImage} />
-      <h3>Ops! Parece que não encontramos o que você procura.</h3>
+      <img src={NotFoundImage} alt='Chefe de cozinha confuso' />
+      <h2>Ops! Dormiu!</h2>
+      <h3>Mas tu é linda até dormindo--<BsFillEmojiHeartEyesFill /></h3>
     </div>
   )
 }
