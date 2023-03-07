@@ -1,4 +1,5 @@
 import style from './Prato.module.scss'
+import styleTema from 'styles/Tema.module.scss'
 
 import { Route, Routes, useNavigate, useParams } from 'react-router-dom'
 
@@ -24,7 +25,7 @@ export default function Prato() {
       <Route
         path="*"
         element={
-          <>
+          <div className={styleTema.container}>
             <button className={style.voltar} onClick={() => navigate(-1)}> {'< Voltar'} </button>
             <section className={style.container}>
               <h1 className={style.titulo}>{prato.title}</h1>
@@ -38,7 +39,7 @@ export default function Prato() {
                 <DetalhesDoPrato {...prato} />
               </div>
             </section>
-          </>
+          </div>
         }
       />
     </Routes>

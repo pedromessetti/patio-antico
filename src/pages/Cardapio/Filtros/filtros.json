@@ -1,22 +1,30 @@
 [
     {
-        "label": "Massas",
+        "label": "Entradas",
         "id": 1
     },
     {
-        "label": "Pizzas",
+        "label": "Saladas",
         "id": 2
     },
     {
-        "label": "Carnes",
+        "label": "Risotto",
         "id": 3
     },
     {
-        "label": "Vegetarianos",
+        "label": "Pizzas",
         "id": 4
     },
     {
-        "label": "Veganos",
+        "label": "Massas",
         "id": 5
+    },
+    {
+        "label": "Carnes",
+        "id": 6
+    },
+    {
+        "label": "Sobremesas",
+        "id": 7
     }
 ]

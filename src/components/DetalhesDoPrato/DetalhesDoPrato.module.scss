@@ -1,12 +1,6 @@
 @import 'styles/variaveis';
 @import 'styles/breakpoints';
 
-$massas: #d73b3b;
-$pizzas: #000000;
-$carnes: #30201e;
-$vegetarianos: #e6c864;
-$veganos: #80aa40;
-
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -35,37 +29,45 @@ $veganos: #80aa40;
         justify-content: center;
         padding: 10px 30px;
 
+        &__entradas {
+            background-color: $entradas;
+            color: white;
+        }
+
+        &__saladas {
+            background-color: $saladas;
+        }
+
+        &__risotto {
+            background-color: $risotto;
+            color: white;
+        }
+
+        &__pizzas {
+            background-color: $pizzas;
+            color: white;
+        }
+
         &__massas {
             background-color: $massas;
-            color: white;
         }
 
         &__carnes {
             background-color: $carnes;
+        }
+
+        &__sobremesas {
+            background-color: $sobremesas;
             color: white;
-        }
-
-        &__vegetarianos {
-            background-color: $vegetarianos;
-        }
-
-        &__veganos {
-            background-color: $veganos;
         }
     }
 
-    &__porcao,
-    &__qtdpessoas,
     &__valor {
         align-items: center;
         display: flex;
         font-size: 1.25rem;
         font-weight: bold;
         justify-content: center;
-    }
-
-    &__valor {
-        color: $red;
         font-size: 1.7rem;
     }
 }

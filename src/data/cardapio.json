@@ -1,101 +1,387 @@
 [
   {
-    "title": "Macarrão mediterrâneo",
-    "description": "Macarrão spaghetti com frutos-do-mar e especíarias, especialidade da cozinha. Atenção: Contém camarão e outros frutos-do-mar!",
-    "photo": "/assets/pratos/macarrao_mediterraneo.png",
-    "price": 73.0,
+    "title": "Saltimbocca misto",
+    "description": "Pão de pizza recheado com presunto e mozzarella fresca",
+    "photo": "/assets/pratos/saltimbocca.jpeg",
+    "price": 20.0,
     "id": 1,
     "category": {
       "id": 1,
-      "label": "Massas"
+      "label": "Entradas"
     }
   },
   {
-    "title": "Macarrão da casa",
-    "description": "Macarrão com frutos-do-mar e especíarias, especialidade da cozinha. Atenção: Contém camarão e outros frutos-do-mar!",
-    "photo": "/assets/pratos/macarrao_da_casa.png",
-    "price": 0.0,
+    "title": "Burratina",
+    "description": "Queijo mozarela recheado com massa fresca de mozarela e creme de leite fermentado.",
+    "photo": "/assets/pratos/burratina.jpg",
+    "price": 8.0,
     "id": 2,
     "category": {
       "id": 1,
-      "label": "Massas"
+      "label": "Entradas"
     }
   },
   {
-    "title": "Macarrão com chilli",
-    "description": "Macarrão fetuccine com molho de chilli e especiárias.",
-    "photo": "/assets/pratos/macarrao_com_chilli.png",
-    "price": 58.0,
+    "title": "Uovo all'acchio di blue",
+    "description": "Ovo frito com rosty de batata e trufa preta",
+    "photo": "/assets/pratos/uovo_all_acchio_di_blue.jpg",
+    "price": 20.0,
     "id": 3,
     "category": {
       "id": 1,
+      "label": "Entradas"
+    }
+  },
+  {
+    "title": "Burrata Pugliese",
+    "description": "Burrata de trufas com salada",
+    "photo": "/assets/pratos/burrata_di_trufas.jpg",
+    "price": 19.0,
+    "id": 4,
+    "category": {
+      "id": 1,
+      "label": "Entradas"
+    }
+  },
+  {
+    "title": "Carpaccio di Filetto",
+    "description": "Novilho em carpaccio com parmesão e rúcula",
+    "photo": "/assets/pratos/carpaccio.jpg",
+    "price": 19.0,
+    "id": 5,
+    "category": {
+      "id": 1,
+      "label": "Entradas"
+    }
+  },
+  {
+    "title": "Salada Caprese",
+    "description": "Tomate, mozzarella fresca e rúcula",
+    "photo": "/assets/pratos/salada_caprese.jpg",
+    "price": 16.0,
+    "id": 6,
+    "category": {
+      "id": 2,
+      "label": "Saladas"
+    }
+  },
+  {
+    "title": "Salada Pazza",
+    "description": "Alface, rúcula, salmão, camarão e cogumelos",
+    "photo": "/assets/pratos/salada_de_camarão.jpg",
+    "price": 20.0,
+    "id": 7,
+    "category": {
+      "id": 2,
+      "label": "Saladas"
+    }
+  },
+  {
+    "title": "Risotto alla Pescatore",
+    "description": "Risotto com polvo e camarão",
+    "photo": "/assets/pratos/risotto_pescatore.jpg",
+    "price": 21.0,
+    "id": 8,
+    "category": {
+      "id": 3,
+      "label": "Risotto"
+    }
+  },
+  {
+    "title": "Risotto all'aragosta",
+    "description": "Risotto de lagosta de Moçambique e courgete",
+    "photo": "/assets/pratos/risotto_aragosta.jpg",
+    "price": 33.0,
+    "id": 9,
+    "category": {
+      "id": 3,
+      "label": "Risotto"
+    }
+  },
+  {
+    "title": "Risotto Asparagi e Funghi",
+    "description": "Risotto com espargos e cogumelos",
+    "photo": "/assets/pratos/risotto_asparagi.jpg",
+    "price": 21.0,
+    "id": 10,
+    "category": {
+      "id": 3,
+      "label": "Risotto"
+    }
+  },
+  {
+    "title": "Calzone Pátio Ántico",
+    "description": "Especialidade do chefe: Mozzarella, fiambre, salame, requeijão e molho de tomate",
+    "photo": "/assets/pratos/calzone_pa.jpg",
+    "price": 19.0,
+    "id": 11,
+    "category": {
+      "id": 4,
+      "label": "Pizzas"
+    }
+  },
+  {
+    "title": "Pizza Al Prosciutto",
+    "description": "Pizza com tomate, mozzarella, presunto e rúcula",
+    "photo": "/assets/pratos/pizza_prosciutto.jpg",
+    "price": 19.0,
+    "id": 12,
+    "category": {
+      "id": 4,
+      "label": "Pizzas"
+    }
+  },
+  {
+    "title": "Pizza Margherita",
+    "description": "Pizza com tomate e mozzarella",
+    "photo": "/assets/pratos/pizza_margherita.jpg",
+    "price": 17.0,
+    "id": 13,
+    "category": {
+      "id": 4,
+      "label": "Pizzas"
+    }
+  },
+  {
+    "title": "Pizza Diavola",
+    "description": "Pizza com tomate, mozzarella, pepperoni, anchovas e azeitonas",
+    "photo": "/assets/pratos/pizza_peperoni.jpg",
+    "price": 19.0,
+    "id": 14,
+    "category": {
+      "id": 4,
+      "label": "Pizzas"
+    }
+  },
+  {
+    "title": "Pizza Napoletana",
+    "description": "Pizza com tomate, mozzarella, bacon e cogumelos",
+    "photo": "/assets/pratos/carpaccio.jpg",
+    "price": 19.0,
+    "id": 15,
+    "category": {
+      "id": 4,
+      "label": "Pizzas"
+    }
+  },
+  {
+    "title": "Pizza 4 Formaggi",
+    "description": "Pizza 4 queijos",
+    "photo": "/assets/pratos/carpaccio.jpg",
+    "price": 19.0,
+    "id": 16,
+    "category": {
+      "id": 4,
+      "label": "Pizzas"
+    }
+  },
+  {
+    "title": "Spaghetti alla carbonara",
+    "description": "Gema de ovo e pancetta",
+    "photo": "/assets/pratos/spaghetti_carbonara.jpg",
+    "price": 19.0,
+    "id": 17,
+    "category": {
+      "id": 5,
       "label": "Massas"
     }
   },
   {
-    "title": "Salada da casa com salmão grelhado",
-    "description": "Salada da casa (alface, rúcula, cenoura) com salmão.",
-    "photo": "/assets/pratos/salada_da_casa.png",
-    "price": 42.0,
-    "id": 4,
+    "title": "Spaghetti al Pomodoro",
+    "description": "Tomate freco e burrata",
+    "photo": "/assets/pratos/spaghetti_con_fonduta_di_pecorino_e_burrata_di_bufala.jpg",
+    "price": 23.0,
+    "id": 18,
     "category": {
-      "id": 2,
+      "id": 5,
+      "label": "Massas"
+    }
+  },
+  {
+    "title": "Spaghetti al Tartufo Nero",
+    "description": "Manteiga, parmesão e trufa preta",
+    "photo": "/assets/pratos/spaghetti_al_tartufo_nero.jpg",
+    "price": 33.0,
+    "id": 19,
+    "category": {
+      "id": 5,
+      "label": "Massas"
+    }
+  },
+  {
+    "title": "Spaghetti Aglio, Olio e Peperonciono",
+    "description": "Alho e salsa com piri-piri",
+    "photo": "/assets/pratos/carpaccio.jpg",
+    "price": 18.0,
+    "id": 20,
+    "category": {
+      "id": 5,
+      "label": "Massas"
+    }
+  },
+  {
+    "title": "Lasagna di Melanzane",
+    "description": "Lasanha de beringela",
+    "photo": "/assets/pratos/lasanha.jpg",
+    "price": 21.0,
+    "id": 21,
+    "category": {
+      "id": 5,
+      "label": "Massas"
+    }
+  },
+  {
+    "title": "Ravioli Ricotta e Spinaci",
+    "description": "Massa caseira recheada com requeijão e espinafres com molho de tomate ou manteiga",
+    "photo": "/assets/pratos/raviolli.jpg",
+    "price": 19.0,
+    "id": 22,
+    "category": {
+      "id": 5,
+      "label": "Massas"
+    }
+  },
+  {
+    "title": "Fettucine al Pesto",
+    "description": "Manjericão fresco, pinhões e parmesão",
+    "photo": "/assets/pratos/fettucine.jpg",
+    "price": 19.0,
+    "id": 23,
+    "category": {
+      "id": 5,
+      "label": "Massas"
+    }
+  },
+  {
+    "title": "Linguine di Mare",
+    "description": "Camarão e tomate cherry",
+    "photo": "/assets/pratos/linguine_di_mare.jpg",
+    "price": 23.0,
+    "id": 24,
+    "category": {
+      "id": 5,
+      "label": "Massas"
+    }
+  },
+  {
+    "title": "Cotoletta alla Milanese",
+    "description": "Bife de vitela panado com spaghetti fresco",
+    "photo": "/assets/pratos/cotoletta.jpg",
+    "price": 24.0,
+    "id": 25,
+    "category": {
+      "id": 6,
       "label": "Carnes"
     }
   },
   {
-    "title": "Bife com batatas",
-    "description": "Bife de boi (150g) na chapa, com batatas fritas. Acompanha arroz e molhos.",
-    "photo": "/assets/pratos/bife_com_batatas.png",
-    "price": 86.0,
-    "id": 5,
+    "title": "Tagliata di Angus",
+    "description": "Entrecôte de Black Angus e massa com trufas",
+    "photo": "/assets/pratos/tagliata_di_angus.jpg",
+    "price": 33.0,
+    "id": 26,
     "category": {
-      "id": 2,
+      "id": 6,
       "label": "Carnes"
     }
   },
   {
-    "title": "Picanha picada com legumes e massa",
-    "description": "400g de picanha picada, com legumes grelhados e massa escolhida pelo cliente.",
-    "photo": "/assets/pratos/picanha_picada.png",
-    "price": 123.0,
-    "id": 6,
+    "title": "Panzerotto di Filetto",
+    "description": "Pão de pizza com lombo de novilho e tomate fresco",
+    "photo": "/assets/pratos/panzerotto.jpg",
+    "price": 29.0,
+    "id": 27,
     "category": {
-      "id": 3,
-      "label": "Combos"
+      "id": 6,
+      "label": "Carnes"
     }
   },
   {
-    "title": "Lasagna vegana (carne de soja)",
-    "description": "Lasagna 100% vegana feita com carne de soja e massa especial.",
-    "photo": "/assets/pratos/lasagna_vegana.png",
-    "price": 45.0,
-    "id": 7,
+    "title": "Filetto Bella Napoli",
+    "description": "Bife do lombo frito com molho de 4 queijos com batata frita",
+    "photo": "/assets/pratos/carpaccio.jpg",
+    "price": 29.0,
+    "id": 28,
     "category": {
-      "id": 4,
-      "label": "Veganos"
+      "id": 6,
+      "label": "Carnes"
     }
   },
   {
-    "title": "Salada especial",
-    "description": "Salada com abacate, manga, alface, grão de bico e muito mais.",
-    "photo": "/assets/pratos/salada_especial.png",
-    "price": 37.0,
-    "id": 8,
+    "title": "Filetto Masaniello",
+    "description": "Bife do lombo grelhado com spaghetti aglio olio",
+    "photo": "/assets/pratos/filetto_masaniello.jpg",
+    "price": 29.0,
+    "id": 29,
     "category": {
-      "id": 4,
-      "label": "Veganos"
+      "id": 6,
+      "label": "Carnes"
     }
   },
   {
-    "title": "Almôndegas",
-    "description": "Porção de almôndegas com sour cream, cebola e tempêros. Acompanha arroz ou massa.",
-    "photo": "/assets/pratos/almondegas.png",
-    "price": 120.0,
-    "id": 9,
+    "title": "Tisamisú",
+    "description": "",
+    "photo": "/assets/pratos/tiramisu.jpg",
+    "price": 8.0,
+    "id": 30,
     "category": {
-      "id": 3,
-      "label": "Combos"
+      "id": 7,
+      "label": "Sobremesas"
+    }
+  },
+  {
+    "title": "Pannacotta",
+    "description": "",
+    "photo": "/assets/pratos/pannacotta.jpg",
+    "price": 8.0,
+    "id": 31,
+    "category": {
+      "id": 7,
+      "label": "Sobremesas"
+    }
+  },
+  {
+    "title": "Bolo de bolacha",
+    "description": "",
+    "photo": "/assets/pratos/bolo_de_bolacha.jpg",
+    "price": 8.0,
+    "id": 32,
+    "category": {
+      "id": 7,
+      "label": "Sobremesas"
+    }
+  },
+  {
+    "title": "Pudim de ovo",
+    "description": "",
+    "photo": "/assets/pratos/pudim.jpg",
+    "price": 8.0,
+    "id": 33,
+    "category": {
+      "id": 7,
+      "label": "Sobremesas"
+    }
+  },
+  {
+    "title": "Mousse de chocolate",
+    "description": "",
+    "photo": "/assets/pratos/mousse.jpeg",
+    "price": 8.0,
+    "id": 34,
+    "category": {
+      "id": 7,
+      "label": "Sobremesas"
+    }
+  },
+  {
+    "title": "Tarte de chocolate",
+    "description": "",
+    "photo": "/assets/pratos/tarte.jpg",
+    "price": 8.0,
+    "id": 35,
+    "category": {
+      "id": 7,
+      "label": "Sobremesas"
     }
   }
 ]
