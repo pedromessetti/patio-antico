@@ -6,7 +6,7 @@ import styleTema from 'styles/Tema.module.scss'
 import cardapio from 'data/cardapio.json'
 
 //Importação das imagens
-import casa from 'assets/sobre/vista_externa.jpg'
+import casa from 'assets/vista_externa.jpg'
 import nossaCasa from 'assets/nossa_casa.png'
 
 import { Link, useNavigate } from 'react-router-dom'
@@ -34,11 +34,7 @@ export default function Home() {
             <br></br> <br></br>
             Quanto ao espaço, o mesmo é amplo, mas o uso de tons terra e de madeiras na decoração conferem a este restaurante um ambiente rústico e acolhedor, ideal tanto para uma romântica refeição a dois como para um animado convívio entre amigos.
           </p>
-          <a
-            href='https://www.google.com/maps/place/P%C3%A1tio+Antico/@38.6958969,-9.2930392,17z/data=!3m1!4b1!4m5!3m4!1s0xd1ec94e0b82ecdd:0x8bcc5a629e74b630!8m2!3d38.6958959!4d-9.2908594'
-            target='_blank'
-            rel="noreferrer"
-          >
+          <a href='https://www.google.com/maps/place/P%C3%A1tio+Antico/@38.6958969,-9.2930392,17z/data=!3m1!4b1!4m5!3m4!1s0xd1ec94e0b82ecdd:0x8bcc5a629e74b630!8m2!3d38.6958959!4d-9.2908594' target='_blank' rel="noreferrer">
             Praça da República, n°6 <br /> <br /> Paço de Arcos, Oeiras
           </a>
         </div>
@@ -50,7 +46,7 @@ export default function Home() {
           {pratosRecomendados.map((item) => (
             <div key={item.id} className={style.recomendado}>
               <div className={style.recomendado__imagem}>
-                <img src={item.photo} alt={item.title} 
+                <img src={item.photo} alt={item.title}
                   onClick={() => redirecionarParaDetalhes(item)}
                 />
               </div>

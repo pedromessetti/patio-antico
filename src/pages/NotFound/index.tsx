@@ -30,6 +30,7 @@ export default function NotFound() {
         </button>
       </div>
       <img src={NotFoundImage} />
+      <h3>Ops! Parece que não encontramos o que você procura.</h3>
     </div>
   )
 }

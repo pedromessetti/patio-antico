@@ -1,0 +1,44 @@
+@import 'styles/breakpoints';
+@import 'styles/variaveis';
+
+.campoTexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .label {
+        font-size: 1.2em;
+        font-weight: 700;
+        color: $darkest-grey;
+        margin: auto;
+    
+        &__numero {
+            margin: auto;
+            width: 80%;
+        }
+    }
+
+    .input {
+        background-color: white;
+        border: solid 1px $grey;
+        border-radius: 4px;
+        font-size: 1em;
+        font-weight: 700;
+        padding: .5em;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        width: 100%;   
+        color: $darkest-grey;     
+        
+        &__numero {
+            font-family: 'Courier New', Courier, monospace;
+            width: 20%;            
+        }
+    }
+    
+    .input::placeholder {
+        font-weight: 700;
+        color: $darkest-grey;
+    }
+    
+}
