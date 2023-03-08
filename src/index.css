@@ -42,7 +42,7 @@ select {
   font: inherit;
 }
 
-a {
+a, abbr[title] {
   text-decoration: none;
 }
 

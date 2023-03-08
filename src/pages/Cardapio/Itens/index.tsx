@@ -9,7 +9,6 @@ import cardapio from 'data/cardapio.json'
 
 //Importação do componente
 import Item from './Item'
-import { Cardapio } from 'types/Prato'
 
 
 //Interface para tipar as props recebidas
@@ -27,13 +26,13 @@ export default function Itens(props: Props) {
   const { busca, filtro } = props
 
   //Função que verifica a busca
-  function testaBusca(title: string) { //Define que o tipo de title é uma string
+  function testaBusca(title: string) {
     const regex = new RegExp(busca, 'i') //Cria uma nova Regular Expression passando o valor da busca e dizendo que é Case Insensitive (Não difere maíusculas de minúsculas)
     return regex.test(title) //Retorna o valor pesquisado se houver
   }
 
   //Função que verifica o filtro
-  function testaFiltro(id: number) { //Define que o tipo do id é um number
+  function testaFiltro(id: number) {
     if (filtro !== null) return filtro === id //Se o filtro não for null e o valor do filtro é o mesmo do id das categorias então retorna-se true
     return true
   }

@@ -2,9 +2,22 @@
 @import 'styles/breakpoints';
 
 .form {
-	display: flex;
+	display: grid;
+	grid-template-columns: 50% 20% 30%;
 	flex-direction: column;
-	width: 30%;
+
+	h3 {
+		color: $darkest-grey;
+		margin: 0;
+	}
+
+	.calendar__container {
+		
+	}
+
+	&__container {
+		margin-top: 50px;
+	}
 
 	.button {
 		font-size: 1.5em;
@@ -15,7 +28,7 @@
 		width: 100%;
 		border: none;
 		border-radius: 4px;
-		margin: 20px auto;
+		margin-top: 50px;
 		transition: 500ms;
 
 		&:hover {
@@ -28,7 +41,12 @@
 		border: none;
 		border-radius: 4px;
 		padding: .5em;
+		width: 100%;
 		height: 100px;
 		font-weight: 700;
+	}
+
+	.not_display {
+		display: none;
 	}
 }
