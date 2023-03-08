@@ -1,7 +1,7 @@
 @import 'styles/variaveis';
 @import 'styles/breakpoints';
 
-form {
+.form {
 	display: flex;
 	flex-direction: column;
 	width: 30%;
@@ -16,5 +16,19 @@ form {
 		border: none;
 		border-radius: 4px;
 		margin: 20px auto;
+		transition: 500ms;
+
+		&:hover {
+			cursor: pointer;
+			background-color: $dark;
+		}
+	}
+
+	textarea {
+		border: none;
+		border-radius: 4px;
+		padding: .5em;
+		height: 100px;
+		font-weight: 700;
 	}
 }

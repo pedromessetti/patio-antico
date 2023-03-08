@@ -2,8 +2,8 @@
 @import "styles/breakpoints";
 
 .footer {
-  background-color: $green;
-  
+  background-color: $grey;
+
   &__top {
     display: grid;
     grid-template-columns: 1.2fr 1.5fr .5fr;
@@ -17,38 +17,30 @@
       transition: 300ms;
 
       &:hover {
-        color: $grey;
+        color: $darkest-grey;
+      }
 
-        .icon {
-          transition: 300ms;
+      .icon {
+        transition: 300ms;
 
-          &__ubereats {
-            color: $ubereats;
-          }
+        &__facebook {
+          color: $facebook;
+        }
 
-          &__mail {
-            color: $red;
-          }
+        &__instagram {
+          color: $instagram;
+        }
 
-          &__tel {
-            color: $tel;
-          }
+        &__tripadvisor {
+          color: $tripadvisor;
+        }
 
-          &__location {
-            color: $red;
-          }
+        &__ubereats {
+          color: $ubereats;
+        }
 
-          &__facebook {
-            color: $facebook;
-          }
-
-          &__instagram {
-            color: $instagram;
-          }
-
-          &__tripadvisor {
-            color: $tripadvisor;
-          }
+        &__location {
+          color: $red;
         }
       }
     }
@@ -79,8 +71,13 @@
     background-color: $dark-green;
     display: flex;
     justify-content: space-between;
-    color: $soft-green;
     font-weight: 600;
     padding: 0 1em;
+
+    p,
+    svg {
+      color: $soft-green;
+    }
   }
+
 }
