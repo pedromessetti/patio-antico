@@ -5,8 +5,6 @@ import styleTema from 'styles/Tema.module.scss'
 //Importação da imagem de not found como um component
 import NotFoundImage from 'assets/not_found.png'
 
-import { BsFillEmojiHeartEyesFill } from 'react-icons/bs'
-
 import { useNavigate } from 'react-router-dom'
 
 //Importação da biblioteca classnames

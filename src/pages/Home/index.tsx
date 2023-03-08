@@ -58,9 +58,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className={style.sobreNos}>
         <h3 className={styleTema.titulo}>Sobre nós</h3>
-        <div className={style.sobreNos}>
+        <div className={style.sobreNos__container}>
           <img src={casa} alt="Casa Aluroni" />
           <div className={style.sobreNos__texto}>
             <p>
@@ -73,6 +73,13 @@ export default function Home() {
               Para acompanhar as massas italianas, possuimos uma reserva de vinhos especiais, que harmonizam perfeitamente com o seu parto, seja carne ou massa!
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className={style.nossaLocalizacao}>
+        <h3 className={styleTema.titulo}>Nossa localização</h3>
+        <div>
+          <iframe className={style.location} title="Localização do restaurante" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.95417498796!2d-9.293039185120561!3d38.69589687960234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ec94e0b82ecdd%3A0x8bcc5a629e74b630!2sP%C3%A1tio%20Antico!5e0!3m2!1spt-PT!2spt!4v1678299544087!5m2!1spt-PT!2spt" width="100%" height="350" loading="lazy"></iframe>
         </div>
       </section>
     </>
