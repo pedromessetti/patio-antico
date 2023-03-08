@@ -1,4 +1,4 @@
-import CampoTexto from 'components/CampoTexto';
+import CampoTexto from 'components/Form/CampoTexto';
 import { useState } from 'react'
 import style from './Form.module.scss'
 import Calendar from 'react-calendar'
