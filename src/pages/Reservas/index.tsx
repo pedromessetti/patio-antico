@@ -1,4 +1,3 @@
-import style from './Reservas.module.scss'
 import styleTema from 'styles/Tema.module.scss'
 
 import Form from 'components/Form'
