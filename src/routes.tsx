@@ -1,20 +1,20 @@
-//Importação do React Router DOM
+//React Router imports
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 
-//Importação dos components
+//Components import
 import Header from 'components/Header'
 import Banner from 'components/Banner'
 import Footer from 'components/Footer'
 
-//Importação das pages
+//Pages import
 import Cardapio from 'pages/Cardapio'
 import Home from 'pages/Home'
 import Reservas from 'pages/Reservas'
 import NotFound from 'pages/NotFound'
 import Prato from 'pages/Prato'
 
-
+//Create and export the base of the aplication
 export default function AppRouter() {
   
   const Wrapper = ({children}: any) => {

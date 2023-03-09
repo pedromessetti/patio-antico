@@ -1,37 +1,37 @@
-//Importação dos estilos
+//Styles import
 import style from './CampoTexto.module.scss'
 
-//Importação da interface do input padrão para tipagem das props recebidas
+//Type import
 import { inputPadrao } from 'types/inputPadrao'
 
-//Importação da biblioteca classnames
+//Lib import
 import classNames from 'classnames'
 
 
-//Cria e exporta o componente da linha, indicando que suas props estão tipadas na interface inputPadrao
-export default function CampoTexto({ label, name, type, placeholder, required, value, setValue }: inputPadrao) {
+//Create and export component CampoTexto
+export default function CampoTexto(props: inputPadrao) {
 
     return (
         <div className={style.campoTexto}>
             <label
-                htmlFor={name}
+                htmlFor={props.name}
                 className={classNames({
-                    [style.label]: label, //Sempre que houver uma label está classe será usada
-                    [style.label__numero]: label && type === 'number', //Sempre que houver uma label e o type do input for number está classe será usada
+                    [style.label]: props.label, //Sempre que houver uma label está classe será usada
+                    [style.label__numero]: props.label && props.type === 'number', //Sempre que houver uma label e o type do input for number está classe será usada
                 })}
             >
-                {label}
+                {props.label}
             </label>
             <input
-                value={value}
-                onChange={(evento) => setValue(evento.target.value)}
-                required={required}
-                placeholder={placeholder}
-                type={type}
-                name={name}
+                value={props.value}
+                onChange={(evento) => props.setValue(evento.target.value)}
+                required={props.required}
+                placeholder={props.placeholder}
+                type={props.type}
+                name={props.name}
                 className={classNames({
                     [style.input]: true, //Está classe sempre será usada
-                    [style.input__numero]: type === 'number', //Está classe será usada caso o type do input seja number 
+                    [style.input__numero]: props.type === 'number', //Está classe será usada caso o type do input seja number 
                 })}
             />
         </div>

@@ -1,13 +1,22 @@
-import CampoTexto from 'components/Form/CampoTexto';
+//React Hook import
 import { useState } from 'react'
+
+//Styles import
 import style from './Form.module.scss'
-import Calendar from 'react-calendar'
 import './Calendar.css'
+
+//Components import
+import CampoTexto from 'components/Form/CampoTexto';
+import Calendar from 'react-calendar'
 import Times from './Time/Times';
+
+//Lib import
 import emailjs from '@emailjs/browser'
 
+//Create and export Form Component
 export default function Form() {
 
+	//Variables used
 	const maxDate = new Date(2023, 11, 31)
 	const [date, setDate] = useState(new Date());
 	const [time, setTime] = useState('');
@@ -17,13 +26,8 @@ export default function Form() {
 	const [pessoas, setPessoas] = useState('');
 	const [message, setMessage] = useState('');
 
-	const save = (event: React.FormEvent<HTMLFormElement> | HTMLFormElement) => {
-		event.preventDefault();
-
-		emailjs.sendForm('service_2zdwjg4', 'template_a8uolmw', event.currentTarget, 'aqduiPe1jPjZFQWpG');
-		
-		window.alert(`${name.split(" ")[0]}, ficamos felizes em informar que a sua reserva foi feita com sucesso!. Muito obrigado e até breve!`);
-
+	//Function to return variables to their default state
+	const setDefaultState = () => {
 		setDate(new Date());
 		setTime('');
 		setName('');
@@ -33,8 +37,19 @@ export default function Form() {
 		setMessage('');
 	}
 
+	//Function to send email with the infos from the form
+	const sendEmail = (event: React.FormEvent<HTMLFormElement> | HTMLFormElement) => {
+		event.preventDefault();
+
+		emailjs.sendForm('service_2zdwjg4', 'template_a8uolmw', event.currentTarget, 'aqduiPe1jPjZFQWpG');
+		
+		window.alert(`${name.split(" ")[0]}, ficamos felizes em informar que a sua reserva foi feita com sucesso!. Muito obrigado e até breve!`);
+
+		setDefaultState();
+	}
+
 	return (
-		<form onSubmit={save} className={style.form}>
+		<form onSubmit={sendEmail} className={style.form}>
 			<div className={style.calendar__container}>
 				<h3>Selecione a data</h3>
 				<Calendar

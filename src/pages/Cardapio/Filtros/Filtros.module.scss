@@ -1,5 +1,8 @@
-@import "styles/variaveis";
+//Import of the breakpoints and colors variables
+@import "styles/colors";
+@import "styles/breakpoints";
 
+//Main settings
 .filtros {
   display: flex;
   gap: 24px;

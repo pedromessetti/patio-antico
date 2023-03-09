@@ -1,22 +1,18 @@
-//Importação do React
+//React imports
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-//Importação do normalize para limpar o css padrão dos navegadores
+//IStyle imports
 import 'normalize.css'
-
-//Importação dos estilos
 import './index.css'
 
-//Importação dos components
+//Component import
 import Router from './routes'
 
+//Main variable that will render all the aplication
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
-//Principal variável que vai renderizar toda a aplicação
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-)
-//Chama o método render(), portanto tudo que estiver dentro será renderizado na página
+//Call render() method
 root.render(
   <React.StrictMode>
     <>

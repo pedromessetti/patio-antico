@@ -1,7 +1,7 @@
-//Importação dos estilos
+//Style import
 import style from './Header.module.scss'
 
-//Importação da Logo
+//import of the path from logo
 import logo from 'assets/logo.png'
 
 //Importação do Link do React Router
@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 //Importação do arquivo JSON contendo as rotas do menu
 import rotas from 'data/rotas.json'
 
-
+//Create and export component Header
 export default function Header() {
   return (
     <header className={style.header}>

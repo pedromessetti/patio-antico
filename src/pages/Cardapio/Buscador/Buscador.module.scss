@@ -1,6 +1,8 @@
-@import "styles/variaveis";
+//Import of the breakpoints and colors variables
+@import "styles/colors";
 @import "styles/breakpoints";
 
+//Main settings
 .buscador {
   align-items: center;
   background-color: $grey;
@@ -11,9 +13,7 @@
   justify-content: space-between;
   padding: 0 15px;
   width: 400px;
-  @media (max-width: $mobile) {
-    width: 100%;
-  }
+
   input {
     background-color: $grey;
     border: none;
@@ -22,7 +22,7 @@
     outline: none;
     width: 100%;
     &::placeholder {
-      color: #4c4d5e;
+      color: $soft-blue;
     }
   }
 }

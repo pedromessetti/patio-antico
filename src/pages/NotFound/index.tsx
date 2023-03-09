@@ -1,31 +1,31 @@
-//Importação dos estilos
+//React Router Hook import
+import { useNavigate } from 'react-router-dom'
+
+//Styles import
 import style from './NotFound.module.scss'
 import styleTema from 'styles/Tema.module.scss'
 
-//Importação da imagem de not found como um component
+//Not Found image import
 import NotFoundImage from 'assets/not_found.png'
 
-import { useNavigate } from 'react-router-dom'
-
-//Importação da biblioteca classnames
+//Lib import
 import classNames from 'classnames'
 
-
+//Create and export component Not Found
 export default function NotFound() {
 
   const navigate = useNavigate()
 
   return (
-    <div className={classNames({
-      [style.container]: true,
-      [styleTema.container]:true
+    <div className={
+      classNames({
+        [style.container]: true,
+        [styleTema.container]: true
     })}>
       <div className={style.voltar}>
-        <button 
-          onClick={() => //Ao clicar chama a função de callback navigate
-            navigate(-1) //está função recebe string e numbers, no caso, voltamos 1 página de navegação portanto volta-se para a última página visitada
-          }
-        >
+        <button onClick={() =>
+          navigate(-1) //Callback function that recive string or numbers, in this case we go back to the previous navigation page
+        }>
           {'< Voltar'}
         </button>
       </div>

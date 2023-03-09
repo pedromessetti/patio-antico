@@ -1,8 +1,8 @@
-//Import of styles
+//Styles import
 import style from './Footer.module.scss'
 import styleTema from 'styles/Tema.module.scss'
 
-//Import of the icons
+//Icons import
 import { RiCopyrightLine } from 'react-icons/ri'
 import { MdEmail, MdPhone, MdLocationOn, MdCalendarToday } from 'react-icons/md'
 import { SiUbereats } from 'react-icons/si'
@@ -10,7 +10,7 @@ import { VscDash } from 'react-icons/vsc'
 import { HiClock } from 'react-icons/hi'
 import { FaFacebookSquare, FaInstagramSquare, FaTripadvisor } from 'react-icons/fa'
 
-
+//Create and export component Footer
 export default function Footer() {
   return (
     <footer className={style.footer}>

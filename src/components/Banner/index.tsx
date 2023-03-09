@@ -1,10 +1,11 @@
-//Importação dos estilos
+//Styles import
 import style from './Banner.module.scss'
 import styleTema from 'styles/Tema.module.scss'
 
-//Importação do React Router
+//React Router Components import
 import { Link, Outlet } from 'react-router-dom'
 
+//Create and export component Banner
 export default function Banner() {
   return (
     <>

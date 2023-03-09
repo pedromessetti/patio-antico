@@ -1,6 +1,8 @@
-@import "styles/variaveis";
+//Import of the breakpoints and colors variables
+@import "styles/colors";
 @import "styles/breakpoints";
 
+//Main settings
 .footer {
   background-color: $grey;
 

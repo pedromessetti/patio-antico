@@ -1,6 +1,9 @@
-//Arquivo de "pontos de quebra", a partir do tamanho de tela do usuário a página reage de uma forma.
-
-$mobile: 480px;
-$tablet: 720px;
-$desktop_small: 1080px;
-$desktop_md: 1280px;
+//Breakpoints for media screen
+$mobileS: 320px;
+$mobileM: 375px;
+$mobileL: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptopL: 1440px;
+$fullHD: 1920px;
+$WQHD: 2560px;

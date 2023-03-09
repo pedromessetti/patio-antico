@@ -1,5 +1,7 @@
-@import 'styles/variaveis.scss';
+//Import of the breakpoints and colors variables
+@import 'styles/colors';
 
+//Main settings
 .container {
 	display: flex;
 	flex-wrap: wrap;
