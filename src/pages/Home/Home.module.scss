@@ -18,7 +18,7 @@
 
     p {
       position: absolute;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 1.05em;
       color: $soft-green;
       margin: 1em;
@@ -63,7 +63,7 @@
 
   &__btn {
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
     color: $dark-green;
     transition: .3s ease-in-out;
 
@@ -116,4 +116,25 @@
 
 .location {
   border: solid 2px $grey;
+}
+
+//Mobile adjustmens
+@media (max-width: $laptop) {
+  .nossaCasa {
+    img {
+      height: 80vh;
+      object-fit: cover;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 2em;
+      width: auto;
+    }
+
+    a {
+      bottom: -25px;
+    }
+  }
+
 }

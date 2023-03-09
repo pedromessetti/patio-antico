@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
 
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+
 /* Regras do Box sizing */
 *,
 *::before,
@@ -12,7 +15,8 @@
 
 /* Set do body padrão */
 body {
-  background-color: #b5b5b5bf;
+  display: flex;
+  background-color: $main-bg;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
 }
@@ -50,4 +54,9 @@ a, abbr[title] {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+//Mobile adjustmens
+@media (max-width: $laptop) {
+  
 }

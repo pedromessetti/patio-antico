@@ -2,9 +2,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-//IStyle imports
+//Style imports
 import 'normalize.css'
-import './index.css'
+import './index.scss'
 
 //Component import
 import Router from './routes'

@@ -10,4 +10,12 @@
   color: $dark-green;
   font-size: 3rem;
   margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+//Mobile adjustmens
+@media (max-width: $laptop) {
+  .container {
+    padding: 0px;
+  }  
 }

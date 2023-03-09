@@ -22,7 +22,8 @@
     position: absolute;
     color: $dark-green;
     font-size: 3em;
-    font-weight: 600;
+    font-weight: 700;
+    border-radius: 5px;
   }
 
   &__btn {
@@ -30,7 +31,7 @@
     padding: .5em 1em;
     border-radius: 15px;
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 700;
     color: $soft-green;
     transition: .5s ease-in-out;
 
@@ -38,4 +39,26 @@
       font-size: 2.1em;
     }
   }
+}
+
+//Mobile adjustmens
+@media (max-width: $laptop) {
+  .banner {
+    padding: 0;
+    height: 150vh;
+
+    &__texto {
+      font-size: 2em;
+      top: 500px;
+      width: 400px;
+    }
+
+    &__btn {
+          font-size: 1.5em;
+          position: absolute;
+          top: 570px;
+          width: 300px;
+          text-align: center;
+    }
+  }  
 }
