@@ -1,5 +1,5 @@
 //Styles import
-import style from './CampoTexto.module.scss'
+import style from './Input.module.scss'
 
 //Type import
 import { inputPadrao } from 'types/inputPadrao'

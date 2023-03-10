@@ -6,7 +6,7 @@ import style from './Form.module.scss'
 import './Calendar.css'
 
 //Components import
-import CampoTexto from 'components/Form/CampoTexto';
+import Input from 'components/Form/Input';
 import Calendar from 'react-calendar'
 import Times from './Time/Times';
 
@@ -17,7 +17,7 @@ import emailjs from '@emailjs/browser'
 export default function Form() {
 
 	//Variables used
-	const maxDate = new Date(2023, 11, 31)
+	const maxDate = new Date(2023, 11, 31);
 	const [date, setDate] = useState(new Date());
 	const [time, setTime] = useState('');
 	const [name, setName] = useState('');
@@ -38,10 +38,11 @@ export default function Form() {
 	}
 
 	//Function to send email with the infos from the form
-	const sendEmail = (event: React.FormEvent<HTMLFormElement> | HTMLFormElement) => {
-		event.preventDefault();
+	const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
 
-		emailjs.sendForm('service_2zdwjg4', 'template_a8uolmw', event.currentTarget, 'aqduiPe1jPjZFQWpG');
+		emailjs.sendForm('service_2zdwjg4', 'template_a8uolmw', e.currentTarget, 'aqduiPe1jPjZFQWpG');
+		emailjs.sendForm('service_2zdwjg4', 'template_kvwthqj', e.currentTarget, 'aqduiPe1jPjZFQWpG');
 		
 		window.alert(`${name.split(" ")[0]}, ficamos felizes em informar que a sua reserva foi feita com sucesso!. Muito obrigado e até breve!`);
 
@@ -58,19 +59,14 @@ export default function Form() {
 					minDate={new Date()}
 					value={date}
 					defaultActiveStartDate={date}
-					prev2Label=""
-					next2Label=""
-					showNeighboringMonth={false}
 					calendarType="US"
+					prev2Label="" next2Label=""
+					showNeighboringMonth={false}
 				/>
-
 				<Times date={date} setTime={setTime} />
-			</div>
-
-			<div></div>
-
+			</div>	<div></div>
 			<div className={style.form__container}>
-				<CampoTexto
+				<Input
 					label='Quantidade de pessoas:'
 					name='pessoas'
 					value={pessoas}
@@ -79,7 +75,7 @@ export default function Form() {
 					min={1}
 					required
 				/>
-				<CampoTexto
+				<Input
 					name='name'
 					value={name}
 					setValue={setName}
@@ -87,7 +83,7 @@ export default function Form() {
 					placeholder='Informe o nome da reserva'
 					required
 				/>
-				<CampoTexto
+				<Input
 					name='contato'
 					value={contato}
 					setValue={setContato}
@@ -95,7 +91,7 @@ export default function Form() {
 					placeholder='Telefone de contacto'
 					required
 				/>
-				<CampoTexto
+				<Input
 					name='email'
 					value={email}
 					setValue={setEmail}
@@ -105,7 +101,7 @@ export default function Form() {
 				/>
 				<textarea
 					name='message'
-					onChange={(event) => setMessage(event.target.value)}
+					onChange={(e) => setMessage(e.target.value)}
 					value={message}
 					placeholder='Caso queira, escreva uma mensagem com alguma preferência para sua reserva. Por exemplo uma mesa ao pé da janela.'
 					required={false}
