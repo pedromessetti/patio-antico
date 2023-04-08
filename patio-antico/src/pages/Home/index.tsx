@@ -61,7 +61,7 @@ export default function Home() {
       <section className={style.sobreNos}>
         <h3 className={styleTema.titulo}>Sobre nós</h3>
         <div className={style.sobreNos__container}>
-          <img src={casa} alt="Casa Aluroni" />
+          <img src={casa} alt="Externa" />
           <div className={style.sobreNos__texto}>
             <p>
               Nós do Pátio Antico oferecemos a vocês, nossos queridos clientes, a Massa Italiana Caseira mais saborosa e sofisticada da região! Prezamos pelos ingredientes tradicionais da culinária Italiana, frescos e de excelente qualidade para que sua experiência seja ainda mais intensa!

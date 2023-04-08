@@ -12,6 +12,7 @@ import Times from './Time/Times';
 
 //Lib import
 import emailjs from '@emailjs/browser'
+import axios from 'axios';
 
 //Create and export Form Component
 export default function Form() {
@@ -38,13 +39,21 @@ export default function Form() {
 	}
 
 	//Function to send email with the infos from the form
-	const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+	function sendEmail(e: React.FormEvent<HTMLFormElement>) {
 		e.preventDefault();
 
 		emailjs.sendForm('service_2zdwjg4', 'template_a8uolmw', e.currentTarget, 'aqduiPe1jPjZFQWpG');
 		emailjs.sendForm('service_2zdwjg4', 'template_kvwthqj', e.currentTarget, 'aqduiPe1jPjZFQWpG');
 		
-		window.alert(`${name.split(" ")[0]}, ficamos felizes em informar que a sua reserva foi feita com sucesso!. Muito obrigado e até breve!`);
+		window.alert(`${name.split(" ")[0]}, aguarde a confirmação de sua reserva no e-mail!. Muito obrigado e até breve!`);
+
+		try {
+			axios.post("hhtp://localhost:4000/post_name", {
+				name
+			});
+		} catch (error) {
+			console.log(error);
+		}
 
 		setDefaultState();
 	}

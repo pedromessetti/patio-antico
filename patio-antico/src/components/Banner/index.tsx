@@ -14,7 +14,7 @@ export default function Banner() {
           A melhor massa está aqui
         </div>
         <Link to='/reservas' className={style.banner__btn}>
-          Faça a sua reserva
+          <span>Faça a sua reserva</span>
         </Link>
       </div>
       <div className={styleTema.container}>

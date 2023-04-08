@@ -28,9 +28,9 @@ export default function Times(props) {
     <>
       <h3>Selecione o horário</h3>
       <div className={style.container}>
-        {time.map(times => {
+        {time.map((times, index) => {
           return (
-            <div className={style.times}>
+            <div className={style.times} key={index}>
               <button onClick={(e) => displayInfo(e)} className={classNames({[style.btn__active]: info})}> {times} </button>
             </div>
           )

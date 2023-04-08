@@ -33,7 +33,7 @@ export default function Itens(props: Props) {
 
   //Função que verifica o filtro
   function testaFiltro(id: number) {
-    if (filtro !== null) return filtro === id //Se o filtro não for null e o valor do filtro é o mesmo do id das categorias então retorna-se true
+    if (filtro !== null) return filtro === id //Se o filtro não for null retorna o id, caso contrario retorna true
     return true
   }
   
